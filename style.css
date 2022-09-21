@@ -38,7 +38,7 @@ section a:hover {
 
 section {
   background: url("./images/bg.png") no-repeat;
-  background-position: center center ;
+  background-position: center center;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -95,4 +95,4 @@ section p {
     background-image: url("./images/bg2.png");
     background-position: 100%;
   }
-	}
+}
