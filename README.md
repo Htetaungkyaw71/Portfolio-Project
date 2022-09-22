@@ -16,10 +16,25 @@
 [Live Demo Link](https://github.com/Htetaungkyaw71/Portfolio-Project)
 
 
+### Prerequisites
+A Web Browser (preferably FireFox or Chrome) to get a local copy up and running follow these simple example
 
-## Authors
 
-👤 **Author1**
+### Setup
+git clone git@github.com:Htetaungkyaw71/Portfolio-Project.git
+Go to the Project cd "Portfolio-Project"
+
+
+### Install
+Run npm install to install the dependencies
+
+
+## Run
+Run npm start to run the live server.
+
+## Htetaungkyaw
+
+👤 **Htetaungkyaw**
 
 - GitHub: [@githubhandle](https://github.com/Htetaungkyaw71)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/htet-aung-kyaw-9a77271a7/)
