@@ -4,7 +4,7 @@
   padding: 10px;
 }
 
-section a {
+.head a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -28,15 +28,34 @@ section a {
   padding-top: 10px;
 }
 
-section a:hover {
+.head a:hover {
   text-decoration: underline;
 }
+
+.about a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+
 
 .icon {
   cursor: pointer;
 }
 
-section {
+.head {
   background: url("./images/bg.png") no-repeat;
   background-position: center center;
   background-size: cover;
@@ -44,6 +63,12 @@ section {
   display: flex;
   align-items: center;
   padding: 10px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 30px;
 }
 
 .header {
@@ -57,7 +82,7 @@ section {
   width: 250px;
 }
 
-section p {
+.head p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -69,6 +94,19 @@ section p {
   flex-grow: 0;
 }
 
+.about p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+
 .image img {
   margin: 3px;
   cursor: pointer;
@@ -76,6 +114,7 @@ section p {
 
 .image {
   margin-top: 7px;
+  margin-bottom: 6px;
 }
 
 .social {
@@ -85,14 +124,193 @@ section p {
   padding: 0;
   margin: 0;
 }
+body{
+  margin: 0px;
+}
 
 .social li {
   margin-right: 7px;
 }
 
+.work{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 3em;
+  grid-auto-rows: minmax(300px,auto);
+  background-color: #F7F7F9;
+  padding: 10px;
+  padding-top: 70px;
+}
+.card{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: white;
+}
+.card img{
+  width: 100%;
+}
+
+.card h1{
+  width: 100%;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172B4D;
+}
+
+.card .position{
+  width: 100%;
+  margin-top: -25px;
+}
+
+.card .position span{
+  margin-left: 3px;
+}
+.card .position .dot{
+  font-size: 50px;
+  color:#C1C7D0 ;
+}
+
+.card .position .pos{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7A869A;
+}
+
+.card .work-text{
+  width: 100%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #344563;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card ul{
+  width: 100%;
+  list-style-type: none;
+  display:  flex;
+  padding: 0px;
+  margin-top: 5px;
+}
+
+.card ul li{
+  padding: 5px;
+  background: #EBEBFF;
+  border-radius: 10px;
+  color: blue;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid #396DF2;
+  border-radius: 16px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396DF2;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #396DF2;
+  color: white;
+}
+
+.project{
+  width: 100%;
+}
+
+.job{
+  list-style-type: none;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0px;
+}
+.job li{
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #eee;
+}
+.job li a{
+  font-size: 27px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+}
+.expand-text{
+  background-color: #F7F7F9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.inner-card{
+  display: flex;
+  align-items: center;
+
+}
+.inner-card span{
+  margin-left: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+} 
+.select-job{
+  display: flex;
+  justify-content: space-between;
+}
+.select-job i{
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+
 @media only screen and (max-width: 767px) {
-  section {
+  .head {
     background-image: url("./images/bg2.png");
     background-position: 100%;
+  }
+  .work{
+    display: grid;
+    grid-template-columns: auto;
   }
 }
