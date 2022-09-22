@@ -28,10 +28,6 @@
   padding-top: 10px;
 }
 
-.head a:hover {
-  text-decoration: underline;
-}
-
 .about a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -45,11 +41,27 @@
   text-decoration: none;
 }
 
-.about a:hover {
+.job li {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #eee;
+}
+
+.job li a {
+  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+}
+
+.head a:hover {
   text-decoration: underline;
 }
 
-
+.about a:hover {
+  text-decoration: underline;
+}
 
 .icon {
   cursor: pointer;
@@ -106,7 +118,6 @@
   flex-grow: 0;
 }
 
-
 .image img {
   margin: 3px;
   cursor: pointer;
@@ -124,99 +135,112 @@
   padding: 0;
   margin: 0;
 }
-body{
-  margin: 0px;
+
+body {
+  margin: 0;
 }
 
 .social li {
   margin-right: 7px;
 }
 
-.work{
+.work {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 3em;
-  grid-auto-rows: minmax(300px,auto);
-  background-color: #F7F7F9;
+  grid-auto-rows: minmax(300px, auto);
+  background-color: #f7f7f9;
   padding: 10px;
   padding-top: 70px;
 }
-.card{
+
+.card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px;
   gap: 12px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   order: 0;
   flex-grow: 0;
   background-color: white;
 }
-.card img{
+
+.card img {
   width: 100%;
 }
 
-.card h1{
+.card h1 {
   width: 100%;
   text-align: left;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
-.card .position{
+.card .position {
   width: 100%;
   margin-top: -25px;
 }
 
-.card .position span{
-  margin-left: 3px;
-}
-.card .position .dot{
-  font-size: 50px;
-  color:#C1C7D0 ;
+.inner-card span {
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
 }
 
-.card .position .pos{
-  font-family: 'Poppins';
+.card .position span {
+  margin-left: 3px;
+}
+
+.card .position .dot {
+  font-size: 50px;
+  color: #c1c7d0;
+}
+
+.card .position .pos {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
-.card .work-text{
+.card .work-text {
   width: 100%;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   color: #344563;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-.card ul{
+.card ul {
   width: 100%;
   list-style-type: none;
-  display:  flex;
-  padding: 0px;
+  display: flex;
+  padding: 0;
   margin-top: 5px;
 }
 
-.card ul li{
+.card ul li {
   padding: 5px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 10px;
   color: blue;
   margin-right: 10px;
@@ -224,92 +248,72 @@ body{
   padding-right: 10px;
 }
 
-.btn{
+.btn {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 14px;
   gap: 10px;
-  background: #FFFFFF;
-  border: 1px solid #396DF2;
+  background: #fff;
+  border: 1px solid #396df2;
   border-radius: 16px;
-
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   cursor: pointer;
 }
 
-.btn:hover{
-  background-color: #396DF2;
+.btn:hover {
+  background-color: #396df2;
   color: white;
 }
 
-.project{
+.project {
   width: 100%;
 }
 
-.job{
+.job {
   list-style-type: none;
   width: 100%;
   margin-top: 30px;
-  padding: 0px;
+  padding: 0;
 }
-.job li{
-  padding-top: 23px;
-  padding-bottom: 23px;
-  border-bottom: 1px solid #eee;
-}
-.job li a{
-  font-size: 27px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  color: black;
-}
-.expand-text{
-  background-color: #F7F7F9;
+
+.expand-text {
+  background-color: #f7f7f9;
   padding: 10px;
   border-radius: 10px;
   margin-top: 20px;
 }
-.inner-card{
+
+.inner-card {
   display: flex;
   align-items: center;
-
 }
-.inner-card span{
-  margin-left: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-} 
-.select-job{
+
+.select-job {
   display: flex;
   justify-content: space-between;
 }
-.select-job i{
+
+.select-job i {
   display: flex;
   font-size: 20px;
   align-items: center;
 }
-
 
 @media only screen and (max-width: 767px) {
   .head {
     background-image: url("./images/bg2.png");
     background-position: 100%;
   }
-  .work{
+
+  .work {
     display: grid;
     grid-template-columns: auto;
   }
