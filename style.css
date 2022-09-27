@@ -332,3 +332,60 @@ body {
     grid-template-columns: auto;
   }
 }
+
+.form-container {
+  background-image: url("./images/bg5.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  border-radius: 50px 0 0 0;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  padding-top: 80px;
+  color: white;
+}
+
+.contact-container h1 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.contact-container p {
+  font-size: 20px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control input,
+textarea {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+}
+
+.submitBtn {
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: #6070ff;
+  transition: 0.5s;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #6070ff;
+  color: white;
+}
