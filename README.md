@@ -44,6 +44,8 @@ Run npm start to run the live server.
 
 Contributions, issues, and feature requests are welcome!
 
+Contributor - https://github.com/ifeanyi305
+
 Feel free to check the [issues page](../../issues/).
 
 ## Show your support
