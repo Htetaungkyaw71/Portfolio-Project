@@ -148,7 +148,6 @@ body {
 
 .social {
   list-style-type: none;
-  display: flex;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -156,6 +155,7 @@ body {
 
 .social li {
   margin-right: 7px;
+  float: left;
 }
 
 .work {
