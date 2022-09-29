@@ -319,6 +319,12 @@ textarea {
 .contact-container p {
   margin-left: 10px;
   margin-right: 10px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.contact-container p:hover {
+  transform: scale(1.2);
 }
 
 .mobile_nav {
@@ -596,6 +602,11 @@ textarea {
 
   .desktop_project_img {
     display: inline;
+    transition: 0.5s;
+  }
+
+  .desktop_project_img:hover {
+    transform: rotate(5deg);
   }
 
   .mobile_project_img {
