@@ -95,8 +95,25 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  width: 250px;
+  width: fit-content;
+  margin-top: 80px;
+  position: relative;
+  animation: heading;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+
 }
+
+@keyframes heading {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+
+
 
 .head p {
   font-style: normal;
@@ -107,7 +124,22 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+  position: relative;
+  animation-name: paragraph;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
 }
+
+@keyframes paragraph {
+  0%{
+    left: -1000px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
 
 .about p {
   font-style: normal;
@@ -123,12 +155,34 @@ body {
 .image img {
   margin: 3px;
   cursor: pointer;
+  transition-property: transform;
+  transition: 1s;
 }
+
+.image img:hover{
+  transform: rotateY(180deg);
+}
+
 
 .image {
   margin-top: 7px;
   margin-bottom: 6px;
+  position: relative;
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
 }
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 
 .social {
   list-style-type: none;
@@ -388,6 +442,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #396df2;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
