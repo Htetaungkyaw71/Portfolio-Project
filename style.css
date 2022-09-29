@@ -95,7 +95,22 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  width: 250px;
+  width: fit-content;
+  margin-top: 80px;
+  position: relative;
+  animation: heading;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+@keyframes heading {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 .head p {
@@ -107,6 +122,20 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+  position: relative;
+  animation-name: paragraph;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes paragraph {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .about p {
@@ -120,14 +149,42 @@ body {
   flex-grow: 0;
 }
 
+.inner-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.card img {
+  width: 100%;
+}
+
 .image img {
   margin: 3px;
   cursor: pointer;
+  transition: 1s transform;
+}
+
+.image img:hover {
+  transform: rotateY(180deg);
 }
 
 .image {
   margin-top: 7px;
   margin-bottom: 6px;
+  position: relative;
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .social {
@@ -147,11 +204,6 @@ body {
   width: 100%;
   margin-top: 30px;
   padding: 0;
-}
-
-.inner-card img {
-  width: 50px;
-  height: 50px;
 }
 
 .select-job {
@@ -265,6 +317,12 @@ textarea {
 .contact-container p {
   margin-left: 10px;
   margin-right: 10px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.contact-container p:hover {
+  transform: scale(1.2);
 }
 
 .mobile_nav {
@@ -303,10 +361,6 @@ textarea {
   flex-grow: 0;
   background-color: white;
   margin-top: 50px;
-}
-
-.card img {
-  width: 100%;
 }
 
 .card h1 {
@@ -388,6 +442,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #396df2;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -541,6 +596,11 @@ textarea {
 
   .desktop_project_img {
     display: inline;
+    transition: 0.5s;
+  }
+
+  .desktop_project_img:hover {
+    transform: rotate(5deg);
   }
 
   .mobile_project_img {
