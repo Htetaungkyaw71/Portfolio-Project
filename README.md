@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/Htetaungkyaw71/Portfolio-Project)
+[Live Demo Link](https://htetaungkyaw71.github.io/Portfolio-Project/)
 
 
 ### Prerequisites
