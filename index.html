@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio project</title>
+    <title>HAK's Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
@@ -12,15 +12,15 @@
     <div class="upper">
         <header>
             <div class="header-container">
-                <a href="./index.html">My Logo</a> 
+                <a href="./index.html" class="logo">Htetaungkyaw</a> 
                 <nav class="mobile_nav">
                     <img src="./images/menu.png" class="icon" width="40" height="40">
                 </nav>
                 <nav class="desktop_nav">
                     <ul class="desktop_nav_ul">
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#work">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,7 +35,7 @@
                 <p>
                     I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
                 </p>
-                <a href="">LET’S CONNECT</a>
+                <a href="#contact">LET’S CONNECT</a>
                 <div class="image">
                     <ul class="social">
                         <li>
@@ -73,7 +73,7 @@
     </div>
    
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="card">
             <div class="card-column">
                 <img src="./images/desktop_project_1.png" class="desktop_project_img">
@@ -210,7 +210,7 @@
 
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-column">
             <h1 class="header">
                 About Myself
@@ -218,7 +218,7 @@
             <p>
                 Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
             </p>
-            <a href="">LET’S CONNECT</a>
+            <a href="#contact">LET’S CONNECT</a>
             <div class="image">
                 <ul class="social">
                     <li>
@@ -312,7 +312,8 @@
 
         
     </section>
-    <footer>
+
+    <footer id="contact">
         <div class="form-container">
             <div class="inner-form-container">
                 <div class="contact-container">
@@ -326,7 +327,6 @@
                         <textarea name="message" id="message" cols="30" rows="10" required placeholder="Send a message" maxlength="500"></textarea>
                         <div class="btn-div">
                             <button type="submit" class="submitBtn">Get in touch</button>
-
                         </div>
                     </form>
                 </div>
