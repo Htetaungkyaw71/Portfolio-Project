@@ -4,8 +4,26 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
   margin: 0;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: home;
 }
 
+@keyframes home {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 .upper {
   background-color: white;
   border-radius: 0 0 0 100px;
@@ -24,14 +42,14 @@ body {
   text-decoration: none;
 }
 
-.header-container a {
+.logo{
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 20px;
   color: #6070ff;
   text-decoration: none;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .about a {
@@ -61,11 +79,15 @@ body {
 
 .desktop_nav_ul {
   list-style-type: none;
+  margin: 0px;
+  padding-top: 15px;
+
 }
 
 .desktop_nav_ul li {
   float: left;
   margin-left: 30px;
+
 }
 
 .desktop_nav_ul li a {
@@ -74,7 +96,16 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
+  text-decoration: none;
+  transition: 0.5s;
 }
+
+
+
+.desktop_nav_ul li a:hover {
+  color: #6070ff;
+}
+
 
 .head a:hover {
   text-decoration: underline;
@@ -86,6 +117,7 @@ body {
 
 .icon {
   cursor: pointer;
+  padding-top: 5px;
 }
 
 .header {
@@ -100,7 +132,7 @@ body {
   position: relative;
   animation: heading;
   animation-fill-mode: forwards;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 @keyframes heading {
@@ -124,7 +156,7 @@ body {
   flex-grow: 0;
   position: relative;
   animation-name: paragraph;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -472,6 +504,11 @@ textarea {
 
 .mobile_project_img {
   display: inline;
+  transition: 0.5s;
+}
+
+.mobile_project_img:hover {
+  transform: rotate(5deg);
 }
 
 .form-container {
