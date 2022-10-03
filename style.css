@@ -11,19 +11,20 @@ body {
 }
 
 @keyframes home {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-}
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 .upper {
   background-color: white;
   border-radius: 0 0 0 100px;
@@ -42,7 +43,7 @@ html {
   text-decoration: none;
 }
 
-.logo{
+.logo {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -79,15 +80,13 @@ html {
 
 .desktop_nav_ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 0;
   padding-top: 15px;
-
 }
 
 .desktop_nav_ul li {
   float: left;
   margin-left: 30px;
-
 }
 
 .desktop_nav_ul li a {
@@ -100,19 +99,16 @@ html {
   transition: 0.5s;
 }
 
-
-
-.desktop_nav_ul li a:hover {
-  color: #6070ff;
-}
-
-
 .head a:hover {
   text-decoration: underline;
 }
 
 .about a:hover {
   text-decoration: underline;
+}
+
+.desktop_nav_ul li a:hover {
+  color: #6070ff;
 }
 
 .icon {
