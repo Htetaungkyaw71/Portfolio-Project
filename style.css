@@ -5,7 +5,7 @@ body {
   background-color: #f7f7f9;
   margin: 0;
   opacity: 0;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-name: home;
 }
@@ -19,6 +19,52 @@ body {
     opacity: 1;
   }
 }
+
+#overlay{
+  display: none;
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  mix-blend-mode: multiply;
+  background-color: #6070FF;
+}
+
+#overlay ul {
+  list-style-type: none;
+  padding-top: 50px;
+  text-align: left;
+}
+
+#overlay li {
+  margin-bottom: 10px;
+}
+
+#overlay a {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+#overlay a:hover {
+  border-bottom: 2px solid white;
+}
+
+.blur {
+  filter: blur(0.5rem);
+}
+
+.close {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+#closeMenu {
+  cursor: pointer;
+}
+
+
 
 html {
   overflow-x: hidden;
@@ -111,6 +157,7 @@ html {
   color: #6070ff;
 }
 
+
 .icon {
   cursor: pointer;
   padding-top: 5px;
@@ -158,11 +205,11 @@ html {
 
 @keyframes paragraph {
   0% {
-    left: -1000px;
+    bottom: -100px;
   }
 
   100% {
-    left: 0;
+    bottom: 0;
   }
 }
 
@@ -528,6 +575,10 @@ textarea {
 
 @media only screen and (min-width: 767px) {
   .btn-div {
+    text-align: center;
+  }
+
+  #overlay ul {
     text-align: center;
   }
 
