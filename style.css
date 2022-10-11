@@ -10,14 +10,6 @@ body {
   animation-name: home;
 }
 
-.detail-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  background: transparent;
-}
-
 #detail {
   position: fixed;
   display: none;
@@ -700,6 +692,7 @@ textarea {
   cursor: pointer;
   transition: 0.5s;
   margin-right: 5px;
+  text-decoration: none;
 }
 
 .model-project .btn:hover {
@@ -715,13 +708,7 @@ textarea {
 /* desktop */
 
 @media only screen and (min-width: 767px) {
-  .detail-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-  }
-
+ 
   #detail {
     position: fixed;
     display: none;
@@ -1052,6 +1039,7 @@ textarea {
     letter-spacing: 0.03em;
     color: #396df2;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .btn:hover {

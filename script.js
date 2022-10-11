@@ -104,12 +104,12 @@ function Render(project) {
           ${project.technologies.map((t) => (`<li>${t}</li>`)).join('')}
           </ul>
           <div class="model-project">
-              <button class="btn">See Live
+               <a href="${project.live}" class="btn">See Live
               <img src="./images/live.svg">
-              </button>
-              <button class="btn">See Source
+              </a>
+              <a href="${project.source_code}" class="btn">See Source
               <img src="./images/source.svg">
-              </button>
+              </a>
           </div>
         </div>
    
