@@ -24,3 +24,9 @@ openMenu.onclick = () => {
 closeMenu.onclick = () => {
   close();
 };
+
+document.querySelectorAll('#overlay_link').forEach((btn) => {
+  btn.onclick = () => {
+    close();
+  };
+});
