@@ -14,7 +14,7 @@
             <div class="header-container">
                 <a href="./index.html" class="logo">Htetaungkyaw</a> 
                 <nav class="mobile_nav">
-                    <img src="./images/menu.png" class="icon" width="40" height="40">
+                    <img src="./images/menu.png" class="icon" width="40" height="40" id="openMenu">
                 </nav>
                 <nav class="desktop_nav">
                     <ul class="desktop_nav_ul">
@@ -33,34 +33,37 @@
                     Glad to see you!
                 </h1>
                 <p>
-                    I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    I’m a software developer! 
+                    I can help you build a product , 
+                    feature or website Look through some of my work and experience!
+                     If you like what you see and have a project you need coded, don’t hestiate to contact me.
                 </p>
                 <a href="#contact">LET’S CONNECT</a>
                 <div class="image">
                     <ul class="social">
                         <li>
                             <a href="">
-                                <img src="./images/Vector.png">
+                                <img src="./images/Vector.png" alt="twitter image">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/Vector4.png">
+                                <img src="./images/Vector4.png"alt="Linkedin image">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/Vector1.png">
+                                <img src="./images/Vector1.png" alt="github image">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/Vector2.png">
+                                <img src="./images/Vector2.png" alt="medium image">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/Vector3.png">
+                                <img src="./images/Vector3.png" alt="crossed fingers image">
                             </a>
                         </li>
                     </ul>
@@ -71,6 +74,23 @@
            
         </section>
     </div>
+
+    <div id="overlay">
+        <div class="close">
+            <img src="./images/close.svg" alt="close image" id="closeMenu">
+        </div>
+        <ul>
+            <li>
+                <a href="#work" id="overlay_link">Portfolio</a>
+            </li>
+            <li>
+                <a href="#about" id="overlay_link">About</a>
+            </li>
+            <li>
+                <a href="#contact" id="overlay_link">Contact</a>
+            </li>
+        </ul>
+    </div> 
    
 
     <section class="work" id="work">
@@ -336,5 +356,5 @@
     </footer>
 
 </body>
-
+    <script src="./script.js"></script>
 </html>
