@@ -20,36 +20,6 @@ body {
   }
 }
 
-#overlay{
-  display: none;
-  position: fixed;
-  z-index: 2;
-  inset: 0;
-  mix-blend-mode: multiply;
-  background-color: #6070FF;
-}
-
-#overlay ul {
-  list-style-type: none;
-  padding-top: 50px;
-  text-align: left;
-}
-
-#overlay li {
-  margin-bottom: 10px;
-}
-
-#overlay a {
-  font-size: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  color: white;
-}
-
-#overlay a:hover {
-  border-bottom: 2px solid white;
-}
-
 .blur {
   filter: blur(0.5rem);
 }
@@ -63,8 +33,6 @@ body {
 #closeMenu {
   cursor: pointer;
 }
-
-
 
 html {
   overflow-x: hidden;
@@ -156,7 +124,6 @@ html {
 .desktop_nav_ul li a:hover {
   color: #6070ff;
 }
-
 
 .icon {
   cursor: pointer;
@@ -571,14 +538,40 @@ textarea {
   padding-left: 0;
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  mix-blend-mode: multiply;
+  background-color: #6070ff;
+}
+
+#overlay ul {
+  list-style-type: none;
+  padding-top: 50px;
+  text-align: left;
+}
+
+#overlay li {
+  margin-bottom: 10px;
+}
+
+#overlay a {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+#overlay a:hover {
+  border-bottom: 2px solid white;
+}
+
 /* desktop */
 
 @media only screen and (min-width: 767px) {
   .btn-div {
-    text-align: center;
-  }
-
-  #overlay ul {
     text-align: center;
   }
 
@@ -756,6 +749,10 @@ textarea {
     padding: 0;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  #overlay ul {
+    text-align: center;
   }
 
   .card ul li {
