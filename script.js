@@ -137,3 +137,25 @@ document.querySelectorAll('.btn').forEach((btn) => {
     });
   };
 });
+
+/// / validate ////
+
+const submitForm = document.getElementById('messageForm');
+const showErr = document.getElementById('showError');
+
+function showError(message) {
+  return `
+  <div class="error">
+    ${message}
+  </div>
+  `;
+}
+
+submitForm.onsubmit = (e) => {
+  const { email } = submitForm.elements;
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    showErr.innerHTML = showError('Email field has to be in lower case');
+  }
+  return true;
+};
