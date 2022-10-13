@@ -159,3 +159,32 @@ submitForm.onsubmit = (e) => {
   }
   return true;
 };
+
+/// localStorage ///
+
+const username = document.getElementById('name');
+const useremail = document.getElementById('email');
+const usermessage = document.getElementById('message');
+
+if (localStorage.getItem('FormData')) {
+  const data = JSON.parse(localStorage.getItem('FormData'));
+  document.getElementById('name').value = data.name;
+  document.getElementById('email').value = data.email;
+  document.getElementById('message').value = data.message;
+}
+
+function addLocalStorage(data) {
+  const dict = JSON.parse(localStorage.getItem('FormData'));
+  const newdict = { ...dict, ...data };
+  localStorage.setItem('FormData', JSON.stringify({ ...newdict }));
+}
+
+username.onchange = (e) => {
+  addLocalStorage({ name: e.target.value });
+};
+useremail.onchange = (e) => {
+  addLocalStorage({ email: e.target.value });
+};
+usermessage.onchange = (e) => {
+  addLocalStorage({ message: e.target.value });
+};
