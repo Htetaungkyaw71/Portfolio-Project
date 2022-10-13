@@ -179,12 +179,12 @@ function addLocalStorage(data) {
   localStorage.setItem('FormData', JSON.stringify({ ...newdict }));
 }
 
-// username.onchange = (e) =>{
-//   addLocalStorage({name:e.target.value})
-// }
-// useremail.onchange = (e) =>{
-//   addLocalStorage({email:e.target.value})
-// }
-// usermessage.onchange = (e) =>{
-//   addLocalStorage({message:e.target.value})
-// }
+username.onchange = (e) =>{
+  addLocalStorage({name:e.target.value})
+}
+useremail.onchange = (e) =>{
+  addLocalStorage({email:e.target.value})
+}
+usermessage.onchange = (e) =>{
+  addLocalStorage({message:e.target.value})
+}
