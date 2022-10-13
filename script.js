@@ -138,7 +138,7 @@ document.querySelectorAll('.btn').forEach((btn) => {
   };
 });
 
-//// validate ////
+/// / validate ////
 
 const submitForm = document.getElementById('messageForm');
 const showErr = document.getElementById('showError');
@@ -160,33 +160,31 @@ submitForm.onsubmit = (e) => {
   return true;
 };
 
-
 /// localStorage ///
 
-let username = document.getElementById('name')
-let useremail = document.getElementById('email')
-let usermessage = document.getElementById('message')
+const username = document.getElementById('name');
+const useremail = document.getElementById('email');
+const usermessage = document.getElementById('message');
 
-
-username.onchange = (e) =>{
-  addLocalStorage({name:e.target.value})
-}
-useremail.onchange = (e) =>{
-  addLocalStorage({email:e.target.value})
-}
-usermessage.onchange = (e) =>{
-  addLocalStorage({message:e.target.value})
+if (localStorage.getItem('FormData')) {
+  const data = JSON.parse(localStorage.getItem('FormData'));
+  document.getElementById('name').value = data.name;
+  document.getElementById('email').value = data.email;
+  document.getElementById('message').value = data.message;
 }
 
-if(localStorage.getItem("FormData")){
-  let data = JSON.parse(localStorage.getItem("FormData"))
-  document.getElementById('name').value = data['name']
-  document.getElementById('email').value = data['email']
-  document.getElementById('message').value = data['message']
+function addLocalStorage(data) {
+  const dict = JSON.parse(localStorage.getItem('FormData'));
+  const newdict = { ...dict, ...data };
+  localStorage.setItem('FormData', JSON.stringify({ ...newdict }));
 }
 
-function addLocalStorage(data){
-  let dict = JSON.parse(localStorage.getItem("FormData"))
-  let newdict = {...dict,...data}
-  localStorage.setItem("FormData",JSON.stringify({...newdict}))
-}
+// username.onchange = (e) =>{
+//   addLocalStorage({name:e.target.value})
+// }
+// useremail.onchange = (e) =>{
+//   addLocalStorage({email:e.target.value})
+// }
+// usermessage.onchange = (e) =>{
+//   addLocalStorage({message:e.target.value})
+// }
