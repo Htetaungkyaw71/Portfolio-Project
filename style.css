@@ -408,6 +408,7 @@ textarea {
 
 .mobile_nav {
   display: block;
+  margin-right:30px;
 }
 
 .head {
@@ -418,10 +419,16 @@ textarea {
   background-size: cover;
 }
 
+
+
 .header-container {
   display: flex;
+  width: 100vw;
   justify-content: space-between;
+  position: fixed;
   padding: 10px;
+  background-color: white;
+  z-index: 2;
 }
 
 .head-text {
@@ -915,6 +922,7 @@ b {
 
   .desktop_nav {
     display: block;
+    margin-right: 200px;
   }
 
   .contact-container p {
@@ -932,7 +940,7 @@ b {
     justify-content: space-between;
     padding: 10px;
     padding-left: 100px;
-    padding-right: 100px;
+    z-index: 2;
   }
 
   .head {
